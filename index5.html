@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Task5</title>
+</head>
+<body>
+  <input type="text"
+  id="first"
+  value="Hello"><br>
+
+  <input type="text"
+  id="second"
+  value="World!"><br>
+
+  <button class="btn">swap</button>
+
+  <script>
+    document.onclick = function() {
+      var element = window.event.srcElement;
+    if (element.className == "btn") {
+      
+      var first = document.getElementById('first').value,
+       second = document.getElementById('second').value;
+
+       document.getElementById('first').value = second;
+       document.getElementById('second').value = first;
+
+    }
+  }
+
+  </script>
+   
+</body>
+</html>
